@@ -13,12 +13,13 @@ function decrementScore_H() {
 }
 
 function updateScore_H() {
-    // Met à jour à la fois la variable et le contenu de la balise p avec l'ID "scoreValue_H"
+    // Met à jour le contenu de l'élément avec l'ID "scoreValue_H"
     document.getElementById('scoreValue_H').innerText = score_H;
 
-    // Enregistre le score dans le stockage local sous forme de fichier JSON
-    localStorage.setItem('score_H', JSON.stringify({ score: score_H }));
+    // Enregistre le score dans le stockage local
+    localStorage.setItem('score_H', score_H.toString());
 }
 
 // Appel initial pour afficher le score au chargement de la page
 updateScore_H();
+
