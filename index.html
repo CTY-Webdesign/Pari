@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="profils">
-        <div class="score">
-            <div class="info">
-                <h3>Hugo</h3>
-                <p id="scoreValue_H"></p>
-                    <div class="btn_score">
-                        <button onclick="incrementScore_H()">+</button>
-                        <button onclick="decrementScore_H()">-</button>
-                    </div>
-                <button id="valide" onclick="updateScore_H()">send score</button>
-            </div>
+    <div id="gradient">
+        <div class="profils">
+            <div class="score">
+                <div class="info">
+                    <p>Hugo</p>
+                    <p id="scoreValue_H"></p>
+                        <div class="btn_score">
+                            <button onclick="incrementScore_H()">+</button>
+                            <button onclick="decrementScore_H()">-</button>
+                        </div>
+                    
+                </div>
 
-        </div>
-        <div class="score">
-            <div class="info">
-                <h3>Thomas</h3>
-                <p id="scoreValue_T"></p>
-                    <div class="btn_score">
-                        <button onclick="incrementScore_T()">+</button>
-                        <button onclick="decrementScore_T()">-</button>
-                    </div>
-                <button id="valide" onclick="updateScore_T()">send score</button>
+            </div>
+            <div class="score">
+                <div class="info">
+                    <p>Thomas</p>
+                    <p id="scoreValue_T"></p>
+                        <div class="btn_score">
+                            <button onclick="incrementScore_T()">+</button>
+                            <button onclick="decrementScore_T()">-</button>
+                        </div>
+                    
+                </div>
             </div>
         </div>
-    </div>
-    <div class="total">
-        <p>Match joué</p>
-        <p>09</p>
-        
+        <div class="total">
+            <p>Match joué</p>
+            <p id="totalValue"></p>
+            
+        </div>
     </div>
 
 

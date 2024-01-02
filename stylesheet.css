@@ -1,7 +1,27 @@
-html{
-    background-color: #fffafa;
+@media only screen and (max-width: 768px) {
+    .score{
+        width: 150px;
+        height: 150px;
+}
+    score p{
+        font-size: 20px
+    }
+
+    .total p{
+        font-size: 30px;
+    }
 }
 
+#gradient {
+    overflow: hidden;
+    background: linear-gradient(#000107,#00073A);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
 .profils{
     display: flex;
@@ -12,15 +32,22 @@ html{
 .score{
     width: 300px;
     height: 300px;
-    border: 2px solid blue;
-    text-align: center;
-    
+    border: 2px solid #fff;
+    text-align: center; 
+}
+.score p{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 30px;
+
 }
 
-.btn_score button{
+.btn_score button {
     display:inline-flex;
+    text-align: center;
     margin: 0 10px;
-    
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -32,6 +59,7 @@ html{
 .total{
     text-align: center;
     margin: 100px auto;
+    color: #fff;
        
 }
 
