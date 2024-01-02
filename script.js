@@ -1,4 +1,5 @@
 let score_H = parseInt(localStorage.getItem('score_H')) || 0;
+let score_T = parseInt(localStorage.getItem('score_T')) || 0;
 
 function incrementScore_H() {
     score_H++;
@@ -23,3 +24,25 @@ function updateScore_H() {
 // Appel initial pour afficher le score au chargement de la page
 updateScore_H();
 
+function incrementScore_T() {
+    score_T++;
+    updateScore_T();
+}
+
+function decrementScore_T() {
+    if (score_T > 0) {
+        score_T--;
+        updateScore_T();
+    }
+}
+
+function updateScore_T() {
+    // Met à jour le contenu de l'élément avec l'ID "scoreValue_H"
+    document.getElementById('scoreValue_T').innerText = score_T;
+
+    // Enregistre le score dans le stockage local
+    localStorage.setItem('score_T', score_T.toString());
+}
+
+// Appel initial pour afficher le score au chargement de la page
+updateScore_T();

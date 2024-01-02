@@ -18,8 +18,9 @@ html{
 }
 
 .btn_score button{
-    display: inline-flex;
-
+    display:inline-flex;
+    margin: 0 10px;
+    
 }
 
 
